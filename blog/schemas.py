@@ -3,13 +3,8 @@ from pydantic import BaseModel
 class Blog(BaseModel):
     title: str
     body: str
+    user_id: int
 
-class ShowBlog(BaseModel):
-    title: str
-    body: str
-    id: int
-    class Config():
-        orm_mode = True
 
 class User(BaseModel):
     name: str
@@ -19,6 +14,17 @@ class User(BaseModel):
 class ShowUser(BaseModel):
     name: str
     email: str
+    password:str
     id:int
     class Config():
         orm_mode = True 
+    
+
+class ShowBlog(BaseModel):
+    title: str
+    body: str
+    id: int
+    creator: ShowUser
+
+    class Config():
+        orm_mode = True

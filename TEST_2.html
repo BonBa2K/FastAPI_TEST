@@ -1,0 +1,2811 @@
+<html>
+
+<head>
+
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@3/swagger-ui.css">
+
+    <link rel="shortcut icon" href="https://fastapi.tiangolo.com/img/favicon.png">
+
+    <title>
+FastAPI - Swagger UI</title>
+
+</head>
+
+
+<body>
+
+    <div id="swagger-ui">
+
+        <div data-reactroot="" class="swagger-ui">
+
+            <div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-assets">
+
+                    <defs>
+
+                        <symbol viewBox="0 0 20 20" id="unlocked">
+
+                            <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z">
+ 
+                            </path>
+
+                        </symbol>
+
+                        <symbol viewBox="0 0 20 20" id="locked">
+
+                            <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z">
+
+
+                            </path>
+
+                        </symbol>
+
+                        <symbol viewBox="0 0 20 20" id="close">
+
+                            <path d="M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z">
+              
+                            </path>
+
+                        </symbol>
+
+                        <symbol viewBox="0 0 20 20" id="large-arrow">
+
+                            <path d="M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z">
+</path>
+
+                        </symbol>
+
+                        <symbol viewBox="0 0 20 20" id="large-arrow-down">
+
+                            <path d="M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z">
+</path>
+
+                        </symbol>
+
+                        <symbol viewBox="0 0 20 20" id="large-arrow-up">
+
+                            <path d="M 17.418 14.908 C 17.69 15.176 18.127 15.176 18.397 14.908 C 18.667 14.64 18.668 14.207 18.397 13.939 L 10.489 6.109 C 10.219 5.841 9.782 5.841 9.51 6.109 L 1.602 13.939 C 1.332 14.207 1.332 14.64 1.602 14.908 C 1.873 15.176 2.311 15.176 2.581 14.908 L 10 7.767 L 17.418 14.908 Z">
+</path>
+
+                        </symbol>
+
+                        <symbol viewBox="0 0 24 24" id="jump-to">
+
+                            <path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z">
+</path>
+
+                        </symbol>
+
+                        <symbol viewBox="0 0 24 24" id="expand">
+
+                            <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z">
+</path>
+
+                        </symbol>
+
+                    </defs>
+
+                </svg>
+
+            </div>
+
+            <div>
+<!-- react-empty: 27 -->
+
+                <div class="information-container wrapper">
+
+                    <section class="block col-12">
+
+                        <div>
+
+                            <div class="info">
+
+                                <hgroup class="main">
+
+                                    <h2 class="title">
+<!-- react-text: 48 -->
+FastAPI<!-- /react-text -->
+
+                                        <span>
+
+                                            <small>
+
+                                                <pre class="version">
+<!-- react-text: 52 -->
+ <!-- /react-text -->
+<!-- react-text: 53 -->
+0.1.0<!-- /react-text -->
+<!-- react-text: 54 -->
+ <!-- /react-text -->
+</pre>
+
+                                            </small>
+
+                                            <small class="version-stamp">
+
+                                                <pre class="version">
+OAS3
+                                                </pre>
+
+                                            </small>
+
+                                        </span>
+
+                                    </h2>
+
+                                    <a target="_blank" href="./openapi.json" rel="noopener noreferrer" class="link">
+
+                                        <span class="url">
+<!-- react-text: 59 -->
+ <!-- /react-text -->
+<!-- react-text: 60 -->
+./openapi.json<!-- /react-text -->
+
+                                        </span>
+
+                                    </a>
+
+                                </hgroup>
+
+                                <div class="description">
+
+                                    <!-- react-empty: 62 -->
+</div>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+
+                    <div>
+
+                    </div>
+
+                    <div class="wrapper">
+
+                        <section class="block col-12 block-desktop col-12-desktop">
+
+                            <div>
+
+                                <span>
+
+                                    <div class="opblock-tag-section is-open">
+
+                                        <h3 class="opblock-tag no-desc" id="operations-tag-default" data-tag="default" data-is-open="true">
+
+                                            <a class="nostyle" href="#/default">
+
+                                                <span>
+default</span>
+
+                                            </a>
+
+                                            <small>
+      
+                                            </small>
+
+                                            <div>
+
+
+                                            </div>
+
+                                            <button aria-expanded="true" class="expand-operation" title="Collapse operation">
+
+                                                <svg class="arrow" width="20" height="20" aria-hidden="true" focusable="false">
+
+                                                    <use href="#large-arrow-up" xlink:href="#large-arrow-up">
+
+
+                                                    </use>
+
+                                                </svg>
+
+                                            </button>
+
+                                        </h3>
+
+                                        <div class="no-margin">
+
+                                            <!-- react-text: 78 -->
+ <!-- /react-text -->
+
+                                            <div class="operation-tag-content">
+
+                                                <span>
+
+                                                    <div class="opblock opblock-get is-open" id="operations-default-all_blog_get">
+
+                                                        <div class="opblock-summary opblock-summary-get">
+
+                                                            <button aria-label="get ​/blog" aria-expanded="true" class="opblock-summary-control">
+
+                                                                <span class="opblock-summary-method">GET</span>
+
+                                                                    <span class="opblock-summary-path" data-path="/blog">
+
+                                                                        <a class="nostyle" href="#/default/all_blog_get">
+
+                                                                            <span><!-- react-text: 88 -->/blog<!-- /react-text -->
+                                                                            </span>
+
+                                                                        </a>
+
+                                                                    </span>
+
+                                                                    <div class="opblock-summary-description">
+All</div>
+
+                                                                    <svg class="arrow" width="20" height="20" aria-hidden="true" focusable="false">
+
+                                                                        <use href="#large-arrow-up" xlink:href="#large-arrow-up">
+
+
+                                                                        </use>
+                                                                    </svg>
+                                                                </button>
+                                                                <!-- react-empty: 92 -->
+                                                            </div>
+                                                            <div class="no-margin">
+                                                                <!-- react-text: 3272 -->
+                                                                 <!-- /react-text -->
+                                                            <div class="opblock-body"><div class="opblock-section"><div class="opblock-section-header"><div class="tab-header"><div class="tab-item active"><h4 class="opblock-title"><span>Parameters</span></h4></div>
+</div>
+<div class="try-out">
+<button class="btn try-out__btn">
+Try it out </button>
+</div>
+</div>
+<div class="parameters-container">
+<div class="opblock-description-wrapper">
+<p>
+No parameters</p>
+</div>
+</div>
+</div>
+<div class="execute-wrapper">
+</div>
+<div class="responses-wrapper">
+<div class="opblock-section-header">
+<h4>
+Responses</h4>
+</div>
+<div class="responses-inner">
+<div>
+<div>
+<div class="curl-command">
+<h4>
+Curl</h4>
+<div class="copy-to-clipboard">
+<button>
+</button>
+</div>
+<div>
+<pre class="curl microlight" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: white;">
+<code class="language-bash" style="white-space: pre;">
+<span>
+<!-- react-text: 3300 -->
+curl -X <!-- /react-text -->
+</span>
+
+                                <span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3302 -->
+'GET'<!-- /react-text -->
+
+                                </span>
+
+                                <span>
+<!-- react-text: 3304 -->
+<!-- /react-text -->
+</span>
+\
+                                <span>
+<!-- react-text: 3306 -->
+  <!-- /react-text -->
+</span>
+
+                                <span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3308 -->
+'http://localhost:8000/blog'<!-- /react-text -->
+
+                                </span>
+
+                                <span>
+<!-- react-text: 3310 -->
+ \<!-- /react-text -->
+</span>
+
+                                <span>
+<!-- react-text: 3312 -->
+  -H <!-- /react-text -->
+</span>
+
+                                <span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3314 -->
+'accept: application/json'<!-- /react-text -->
+</span>
+
+                            </code>
+
+                        </pre>
+</div>
+</div>
+<div>
+<h4>
+Request URL</h4>
+<div class="request-url">
+<pre class="microlight">
+http://localhost:8000/blog</pre>
+</div>
+</div>
+<h4>
+Server response</h4>
+<table class="responses-table live-responses-table">
+<thead>
+<tr class="responses-header">
+<td class="col_header response-col_status">
+Code</td>
+<td class="col_header response-col_description">
+Details</td>
+</tr>
+</thead>
+<tbody>
+<tr class="response">
+<td class="response-col_status">
+<!-- react-text: 3328 -->
+200<!-- /react-text -->
+</td>
+<td class="response-col_description">
+<div>
+<h5>
+Response body</h5>
+<div class="highlight-code">
+<div class="download-contents">
+Download</div>
+<div class="copy-to-clipboard">
+<button>
+</button>
+</div>
+<pre class=" microlight" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: white;">
+<code class="language-json" style="white-space: pre;">
+<span>
+<!-- react-text: 3339 -->
+[
+<!-- /react-text -->
+</span>
+<!-- react-text: 3340 -->
+  {
+<!-- /react-text -->
+<span>
+<!-- react-text: 3342 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3344 -->
+"title"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3346 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3348 -->
+"JOJO_T1"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3350 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3352 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3354 -->
+"body"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3356 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3358 -->
+"JOJO_body1"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3360 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3362 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3364 -->
+"id"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3366 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(211, 99, 99);">
+<!-- react-text: 3368 -->
+1<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3370 -->
+
+<!-- /react-text -->
+</span>
+<!-- react-text: 3371 -->
+  },
+<!-- /react-text -->
+<!-- react-text: 3372 -->
+  {
+<!-- /react-text -->
+<span>
+<!-- react-text: 3374 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3376 -->
+"title"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3378 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3380 -->
+"updated title"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3382 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3384 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3386 -->
+"body"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3388 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3390 -->
+"JOJO_B1"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3392 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3394 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3396 -->
+"id"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3398 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(211, 99, 99);">
+<!-- react-text: 3400 -->
+2<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3402 -->
+
+<!-- /react-text -->
+</span>
+<!-- react-text: 3403 -->
+  },
+<!-- /react-text -->
+<!-- react-text: 3404 -->
+  {
+<!-- /react-text -->
+<span>
+<!-- react-text: 3406 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3408 -->
+"title"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3410 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3412 -->
+"JT_X_UP"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3414 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3416 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3418 -->
+"body"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3420 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3422 -->
+"JB_X_UP"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3424 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3426 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3428 -->
+"id"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3430 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(211, 99, 99);">
+<!-- react-text: 3432 -->
+3<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3434 -->
+
+<!-- /react-text -->
+</span>
+<!-- react-text: 3435 -->
+  },
+<!-- /react-text -->
+<!-- react-text: 3436 -->
+  {
+<!-- /react-text -->
+<span>
+<!-- react-text: 3438 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3440 -->
+"title"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3442 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3444 -->
+"updated title"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3446 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3448 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3450 -->
+"body"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3452 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3454 -->
+"JOJ0_Body_2"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3456 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3458 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3460 -->
+"id"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3462 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(211, 99, 99);">
+<!-- react-text: 3464 -->
+4<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3466 -->
+
+<!-- /react-text -->
+</span>
+<!-- react-text: 3467 -->
+  },
+<!-- /react-text -->
+<!-- react-text: 3468 -->
+  {
+<!-- /react-text -->
+<span>
+<!-- react-text: 3470 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3472 -->
+"title"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3474 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3476 -->
+"JT_1_UP"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3478 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3480 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3482 -->
+"body"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3484 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3486 -->
+"JB_1_UP"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3488 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3490 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3492 -->
+"id"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3494 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(211, 99, 99);">
+<!-- react-text: 3496 -->
+6<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3498 -->
+
+<!-- /react-text -->
+</span>
+<!-- react-text: 3499 -->
+  },
+<!-- /react-text -->
+<!-- react-text: 3500 -->
+  {
+<!-- /react-text -->
+<span>
+<!-- react-text: 3502 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3504 -->
+"title"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3506 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3508 -->
+"JT_2"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3510 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3512 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3514 -->
+"body"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3516 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3518 -->
+"JB_2"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3520 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3522 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3524 -->
+"id"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3526 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(211, 99, 99);">
+<!-- react-text: 3528 -->
+7<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3530 -->
+
+<!-- /react-text -->
+</span>
+<!-- react-text: 3531 -->
+  },
+<!-- /react-text -->
+<!-- react-text: 3532 -->
+  {
+<!-- /react-text -->
+<span>
+<!-- react-text: 3534 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3536 -->
+"title"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3538 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3540 -->
+"JT_3"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3542 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3544 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3546 -->
+"body"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3548 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3550 -->
+"JB_3"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3552 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3554 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3556 -->
+"id"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3558 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(211, 99, 99);">
+<!-- react-text: 3560 -->
+8<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3562 -->
+
+<!-- /react-text -->
+</span>
+<!-- react-text: 3563 -->
+  },
+<!-- /react-text -->
+<!-- react-text: 3564 -->
+  {
+<!-- /react-text -->
+<span>
+<!-- react-text: 3566 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3568 -->
+"title"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3570 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3572 -->
+"JT_X"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3574 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3576 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3578 -->
+"body"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3580 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3582 -->
+"JB_X"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3584 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3586 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3588 -->
+"id"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3590 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(211, 99, 99);">
+<!-- react-text: 3592 -->
+9<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3594 -->
+
+<!-- /react-text -->
+</span>
+<!-- react-text: 3595 -->
+  },
+<!-- /react-text -->
+<!-- react-text: 3596 -->
+  {
+<!-- /react-text -->
+<span>
+<!-- react-text: 3598 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3600 -->
+"title"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3602 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3604 -->
+"string1"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3606 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3608 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3610 -->
+"body"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3612 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3614 -->
+"string1"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3616 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3618 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3620 -->
+"id"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3622 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(211, 99, 99);">
+<!-- react-text: 3624 -->
+10<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3626 -->
+
+<!-- /react-text -->
+</span>
+<!-- react-text: 3627 -->
+  }
+<!-- /react-text -->
+<!-- react-text: 3628 -->
+]
+<!-- /react-text -->
+</code>
+</pre>
+</div>
+</div>
+<div>
+<h5>
+Response headers</h5>
+<pre class="microlight">
+<span class="headerline">
+<!-- react-text: 3633 -->
+ <!-- /react-text -->
+<!-- react-text: 3634 -->
+content-length<!-- /react-text -->
+<!-- react-text: 3635 -->
+: <!-- /react-text -->
+<!-- react-text: 3636 -->
+399<!-- /react-text -->
+<!-- react-text: 3637 -->
+ <!-- /react-text -->
+</span>
+<span class="headerline">
+<!-- react-text: 3639 -->
+ <!-- /react-text -->
+<!-- react-text: 3640 -->
+content-type<!-- /react-text -->
+<!-- react-text: 3641 -->
+: <!-- /react-text -->
+<!-- react-text: 3642 -->
+application/json<!-- /react-text -->
+<!-- react-text: 3643 -->
+ <!-- /react-text -->
+</span>
+<span class="headerline">
+<!-- react-text: 3645 -->
+ <!-- /react-text -->
+<!-- react-text: 3646 -->
+date<!-- /react-text -->
+<!-- react-text: 3647 -->
+: <!-- /react-text -->
+<!-- react-text: 3648 -->
+Sat,11 Dec 2021 11:30:44 GMT<!-- /react-text -->
+<!-- react-text: 3649 -->
+ <!-- /react-text -->
+</span>
+<span class="headerline">
+<!-- react-text: 3651 -->
+ <!-- /react-text -->
+<!-- react-text: 3652 -->
+server<!-- /react-text -->
+<!-- react-text: 3653 -->
+: <!-- /react-text -->
+<!-- react-text: 3654 -->
+uvicorn<!-- /react-text -->
+<!-- react-text: 3655 -->
+ <!-- /react-text -->
+</span>
+</pre>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4>
+Responses</h4>
+</div>
+<table aria-live="polite" class="responses-table" id="get_blog_responses" role="region">
+<thead>
+<tr class="responses-header">
+<td class="col_header response-col_status">
+Code</td>
+<td class="col_header response-col_description">
+Description</td>
+<td class="col col_header response-col_links">
+Links</td>
+</tr>
+</thead>
+<tbody>
+<tr class="response response_current" data-code="200">
+<td class="response-col_status">
+200</td>
+<td class="response-col_description">
+<div class="response-col_description__inner">
+<div class="renderedMarkdown">
+<p>
+Successful Response</p>
+</div>
+</div>
+<section class="response-controls">
+<div class="response-control-media-type response-control-media-type--accept-controller">
+<small class="response-control-media-type__title">
+Media type</small>
+<div class="content-type-wrapper ">
+<select aria-label="Media Type" class="content-type">
+<option value="application/json">
+application/json</option>
+</select>
+</div>
+<small class="response-control-media-type__accept-message">
+<!-- react-text: 3676 -->
+Controls <!-- /react-text -->
+<code>
+Accept</code>
+<!-- react-text: 3678 -->
+ header.<!-- /react-text -->
+</small>
+</div>
+</section>
+<div class="model-example">
+<ul class="tab" role="tablist">
+<li class="tabitem active" role="presentation">
+<button aria-controls="rJro8xM=" aria-selected="true" class="tablinks" data-name="example" id="LoTRSUQ=" role="tab">
+Example Value</button>
+</li>
+<li class="tabitem" role="presentation">
+<button aria-controls="t5VJPBU=" aria-selected="false" class="tablinks" data-name="model" id="wLFmyak=" role="tab">
+Schema</button>
+</li>
+</ul>
+<div aria-hidden="false" aria-labelledby="LoTRSUQ=" data-name="examplePanel" id="rJro8xM=" role="tabpanel" tabindex="0">
+<div>
+<div class="highlight-code">
+<pre class="example microlight" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: white;">
+<code class="language-json" style="white-space: pre;">
+<span>
+<!-- react-text: 3691 -->
+[
+<!-- /react-text -->
+</span>
+<!-- react-text: 3692 -->
+  {
+<!-- /react-text -->
+<span>
+<!-- react-text: 3694 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3696 -->
+"title"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3698 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3700 -->
+"string"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3702 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3704 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3706 -->
+"body"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3708 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 3710 -->
+"string"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3712 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3714 -->
+    <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 3716 -->
+"id"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3718 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(211, 99, 99);">
+<!-- react-text: 3720 -->
+0<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 3722 -->
+
+<!-- /react-text -->
+</span>
+<!-- react-text: 3723 -->
+  }
+<!-- /react-text -->
+<!-- react-text: 3724 -->
+]
+<!-- /react-text -->
+</code>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</td>
+<td class="response-col_links">
+<i>
+No links</i>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- react-text: 3727 -->
+ <!-- /react-text -->
+</div>
+</div>
+</span>
+<span>
+<div class="opblock opblock-post" id="operations-default-create_blog_post">
+<div class="opblock-summary opblock-summary-post">
+<button aria-label="post ​/blog" aria-expanded="false" class="opblock-summary-control">
+<span class="opblock-summary-method">
+POST</span>
+<span class="opblock-summary-path" data-path="/blog">
+<a class="nostyle" href="#/default/create_blog_post">
+<span>
+<!-- react-text: 102 -->
+/blog<!-- /react-text -->
+</span>
+</a>
+</span>
+<div class="opblock-summary-description">
+Create</div>
+<svg class="arrow" width="20" height="20" aria-hidden="true" focusable="false">
+<use href="#large-arrow-down" xlink:href="#large-arrow-down">
+</use>
+</svg>
+</button>
+<!-- react-empty: 106 -->
+</div>
+<noscript>
+</noscript>
+</div>
+</span>
+<span>
+<div class="opblock opblock-get" id="operations-default-show_blog__id__get">
+<div class="opblock-summary opblock-summary-get">
+<button aria-label="get ​/blog​/{id}" aria-expanded="false" class="opblock-summary-control">
+<span class="opblock-summary-method">
+GET</span>
+<span class="opblock-summary-path" data-path="/blog/{id}">
+<a class="nostyle" href="#/default/show_blog__id__get">
+<span>
+<!-- react-text: 116 -->
+/blog<!-- /react-text -->
+<wbr>
+<!-- react-text: 118 -->
+/{id}<!-- /react-text -->
+</span>
+</a>
+</span>
+<div class="opblock-summary-description">
+Show</div>
+<svg class="arrow" width="20" height="20" aria-hidden="true" focusable="false">
+<use href="#large-arrow-down" xlink:href="#large-arrow-down">
+</use>
+</svg>
+</button>
+<!-- react-empty: 122 -->
+</div>
+<noscript>
+</noscript>
+</div>
+</span>
+<span>
+<div class="opblock opblock-put" id="operations-default-update_blog__id__put">
+<div class="opblock-summary opblock-summary-put">
+<button aria-label="put ​/blog​/{id}" aria-expanded="false" class="opblock-summary-control">
+<span class="opblock-summary-method">
+PUT</span>
+<span class="opblock-summary-path" data-path="/blog/{id}">
+<a class="nostyle" href="#/default/update_blog__id__put">
+<span>
+<!-- react-text: 132 -->
+/blog<!-- /react-text -->
+<wbr>
+<!-- react-text: 134 -->
+/{id}<!-- /react-text -->
+</span>
+</a>
+</span>
+<div class="opblock-summary-description">
+Update</div>
+<svg class="arrow" width="20" height="20" aria-hidden="true" focusable="false">
+<use href="#large-arrow-down" xlink:href="#large-arrow-down">
+</use>
+</svg>
+</button>
+<!-- react-empty: 138 -->
+</div>
+<noscript>
+</noscript>
+</div>
+</span>
+<span>
+<div class="opblock opblock-delete" id="operations-default-destroy_blog__id__delete">
+<div class="opblock-summary opblock-summary-delete">
+<button aria-label="delete ​/blog​/{id}" aria-expanded="false" class="opblock-summary-control">
+<span class="opblock-summary-method">
+DELETE</span>
+<span class="opblock-summary-path" data-path="/blog/{id}">
+<a class="nostyle" href="#/default/destroy_blog__id__delete">
+<span>
+<!-- react-text: 148 -->
+/blog<!-- /react-text -->
+<wbr>
+<!-- react-text: 150 -->
+/{id}<!-- /react-text -->
+</span>
+</a>
+</span>
+<div class="opblock-summary-description">
+Destroy</div>
+<svg class="arrow" width="20" height="20" aria-hidden="true" focusable="false">
+<use href="#large-arrow-down" xlink:href="#large-arrow-down">
+</use>
+</svg>
+</button>
+<!-- react-empty: 154 -->
+</div>
+<noscript>
+</noscript>
+</div>
+</span>
+<span>
+<div class="opblock opblock-post is-open" id="operations-default-create_user_user_post">
+<div class="opblock-summary opblock-summary-post">
+<button aria-label="post ​/user" aria-expanded="true" class="opblock-summary-control">
+<span class="opblock-summary-method">
+POST</span>
+<span class="opblock-summary-path" data-path="/user">
+<a class="nostyle" href="#/default/create_user_user_post">
+<span>
+<!-- react-text: 164 -->
+/user<!-- /react-text -->
+</span>
+</a>
+</span>
+<div class="opblock-summary-description">
+Create User</div>
+<svg class="arrow" width="20" height="20" aria-hidden="true" focusable="false">
+<use href="#large-arrow-up" xlink:href="#large-arrow-up">
+</use>
+</svg>
+</button>
+<!-- react-empty: 168 -->
+</div>
+<div class="no-margin">
+<!-- react-text: 1828 -->
+ <!-- /react-text -->
+<div class="opblock-body">
+<div class="opblock-section">
+<div class="opblock-section-header">
+<div class="tab-header">
+<div class="tab-item active">
+<h4 class="opblock-title">
+<span>
+Parameters</span>
+</h4>
+</div>
+</div>
+<div class="try-out">
+<button class="btn try-out__btn cancel">
+Cancel</button>
+</div>
+</div>
+<div class="parameters-container">
+<div class="opblock-description-wrapper">
+<p>
+No parameters</p>
+</div>
+</div>
+<div class="opblock-section opblock-section-request-body">
+<div class="opblock-section-header">
+<h4 class="opblock-title parameter__name required">
+Request body</h4>
+<label>
+<div class="content-type-wrapper body-param-content-type">
+<select aria-label="Request content type" class="content-type">
+<option value="application/json">
+application/json</option>
+</select>
+</div>
+</label>
+</div>
+<div class="opblock-description-wrapper">
+<div>
+<div>
+<div class="body-param">
+<textarea class="body-param__text" title="">
+{
+  "name": "string",
+  "email": "string",
+  "password": "string"
+}</textarea>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- react-empty: 2040 -->
+<div class="btn-group">
+<button class="btn execute opblock-control__btn">
+Execute</button>
+<button class="btn btn-clear opblock-control__btn">
+Clear</button>
+</div>
+<div class="responses-wrapper">
+<div class="opblock-section-header">
+<h4>
+Responses</h4>
+</div>
+<div class="responses-inner">
+<div>
+<div>
+<div class="curl-command">
+<h4>
+Curl</h4>
+<div class="copy-to-clipboard">
+<button>
+</button>
+</div>
+<div>
+<pre class="curl microlight" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: white;">
+<code class="language-bash" style="white-space: pre;">
+<span>
+<!-- react-text: 2055 -->
+curl -X <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2057 -->
+'POST'<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2059 -->
+ \
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2061 -->
+  <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2063 -->
+'http://localhost:8000/user'<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2065 -->
+ \
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2067 -->
+  -H <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2069 -->
+'accept: application/json'<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2071 -->
+ \
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2073 -->
+  -H <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2075 -->
+'Content-Type: application/json'<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2077 -->
+ \
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2079 -->
+  -d <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2081 -->
+'{
+<!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2083 -->
+  "name": "string",
+<!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2085 -->
+  "email": "string",
+<!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2087 -->
+  "password": "string"
+<!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2089 -->
+}'
+<!-- /react-text -->
+</span>
+</code>
+</pre>
+</div>
+</div>
+<div>
+<h4>
+Request URL</h4>
+<div class="request-url">
+<pre class="microlight">
+http://localhost:8000/user</pre>
+</div>
+</div>
+<h4>
+Server response</h4>
+<table class="responses-table live-responses-table">
+<thead>
+<tr class="responses-header">
+<td class="col_header response-col_status">
+Code</td>
+<td class="col_header response-col_description">
+Details</td>
+</tr>
+</thead>
+<tbody>
+<tr class="response">
+<td class="response-col_status">
+<!-- react-text: 2103 -->
+201<!-- /react-text -->
+</td>
+<td class="response-col_description">
+<div>
+<h5>
+Response body</h5>
+<div class="highlight-code">
+<div class="download-contents">
+Download</div>
+<div class="copy-to-clipboard">
+<button>
+</button>
+</div>
+<pre class=" microlight" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: white;">
+<code class="language-json" style="white-space: pre;">
+<span>
+<!-- react-text: 2114 -->
+{
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2116 -->
+  <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 2118 -->
+"name"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2120 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2122 -->
+"string"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2124 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2126 -->
+  <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 2128 -->
+"email"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2130 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2132 -->
+"string"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2134 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2136 -->
+  <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 2138 -->
+"id"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2140 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(211, 99, 99);">
+<!-- react-text: 2142 -->
+5<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2144 -->
+
+<!-- /react-text -->
+</span>
+<!-- react-text: 2145 -->
+}
+<!-- /react-text -->
+</code>
+</pre>
+</div>
+</div>
+<div>
+<h5>
+Response headers</h5>
+<pre class="microlight">
+<span class="headerline">
+<!-- react-text: 2150 -->
+ <!-- /react-text -->
+<!-- react-text: 2151 -->
+content-length<!-- /react-text -->
+<!-- react-text: 2152 -->
+: <!-- /react-text -->
+<!-- react-text: 2153 -->
+41<!-- /react-text -->
+<!-- react-text: 2154 -->
+ <!-- /react-text -->
+</span>
+<span class="headerline">
+<!-- react-text: 2156 -->
+ <!-- /react-text -->
+<!-- react-text: 2157 -->
+content-type<!-- /react-text -->
+<!-- react-text: 2158 -->
+: <!-- /react-text -->
+<!-- react-text: 2159 -->
+application/json<!-- /react-text -->
+<!-- react-text: 2160 -->
+ <!-- /react-text -->
+</span>
+<span class="headerline">
+<!-- react-text: 2162 -->
+ <!-- /react-text -->
+<!-- react-text: 2163 -->
+date<!-- /react-text -->
+<!-- react-text: 2164 -->
+: <!-- /react-text -->
+<!-- react-text: 2165 -->
+Sat,11 Dec 2021 11:31:57 GMT<!-- /react-text -->
+<!-- react-text: 2166 -->
+ <!-- /react-text -->
+</span>
+<span class="headerline">
+<!-- react-text: 2168 -->
+ <!-- /react-text -->
+<!-- react-text: 2169 -->
+server<!-- /react-text -->
+<!-- react-text: 2170 -->
+: <!-- /react-text -->
+<!-- react-text: 2171 -->
+uvicorn<!-- /react-text -->
+<!-- react-text: 2172 -->
+ <!-- /react-text -->
+</span>
+</pre>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4>
+Responses</h4>
+</div>
+<table aria-live="polite" class="responses-table" id="post_user_responses" role="region">
+<thead>
+<tr class="responses-header">
+<td class="col_header response-col_status">
+Code</td>
+<td class="col_header response-col_description">
+Description</td>
+<td class="col col_header response-col_links">
+Links</td>
+</tr>
+</thead>
+<tbody>
+<tr class="response response_current" data-code="201">
+<td class="response-col_status">
+201</td>
+<td class="response-col_description">
+<div class="response-col_description__inner">
+<div class="renderedMarkdown">
+<p>
+Successful Response</p>
+</div>
+</div>
+<section class="response-controls">
+<div class="response-control-media-type response-control-media-type--accept-controller">
+<small class="response-control-media-type__title">
+Media type</small>
+<div class="content-type-wrapper ">
+<select aria-label="Media Type" class="content-type">
+<option value="application/json">
+application/json</option>
+</select>
+</div>
+<small class="response-control-media-type__accept-message">
+<!-- react-text: 1919 -->
+Controls <!-- /react-text -->
+<code>
+Accept</code>
+<!-- react-text: 1921 -->
+ header.<!-- /react-text -->
+</small>
+</div>
+</section>
+<div class="model-example">
+<ul class="tab" role="tablist">
+<li class="tabitem active" role="presentation">
+<button aria-controls="i6FSwAU=" aria-selected="true" class="tablinks" data-name="example" id="Ddkvlu0=" role="tab">
+Example Value</button>
+</li>
+<li class="tabitem" role="presentation">
+<button aria-controls="5ywyxf8=" aria-selected="false" class="tablinks" data-name="model" id="JTmLQzw=" role="tab">
+Schema</button>
+</li>
+</ul>
+<div aria-hidden="false" aria-labelledby="Ddkvlu0=" data-name="examplePanel" id="i6FSwAU=" role="tabpanel" tabindex="0">
+<div>
+<div class="highlight-code">
+<pre class="example microlight" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: white;">
+<code class="language-json" style="white-space: pre;">
+<span>
+<!-- react-text: 1934 -->
+{
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 1936 -->
+  <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 1938 -->
+"name"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 1940 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 1942 -->
+"string"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 1944 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 1946 -->
+  <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 1948 -->
+"email"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 1950 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 1952 -->
+"string"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 1954 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 1956 -->
+  <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 1958 -->
+"id"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 1960 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(211, 99, 99);">
+<!-- react-text: 1962 -->
+0<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 1964 -->
+
+<!-- /react-text -->
+</span>
+<!-- react-text: 1965 -->
+}
+<!-- /react-text -->
+</code>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</td>
+<td class="response-col_links">
+<i>
+No links</i>
+</td>
+</tr>
+<tr class="response " data-code="422">
+<td class="response-col_status">
+422</td>
+<td class="response-col_description">
+<div class="response-col_description__inner">
+<div class="renderedMarkdown">
+<p>
+Validation Error</p>
+</div>
+</div>
+<section class="response-controls">
+<div class="response-control-media-type">
+<small class="response-control-media-type__title">
+Media type</small>
+<div class="content-type-wrapper ">
+<select aria-label="Media Type" class="content-type">
+<option value="application/json">
+application/json</option>
+</select>
+</div>
+</div>
+</section>
+<div class="model-example">
+<ul class="tab" role="tablist">
+<li class="tabitem active" role="presentation">
+<button aria-controls="QAtMnf4=" aria-selected="true" class="tablinks" data-name="example" id="17SYCeI=" role="tab">
+Example Value</button>
+</li>
+<li class="tabitem" role="presentation">
+<button aria-controls="MwG0Cas=" aria-selected="false" class="tablinks" data-name="model" id="xZdmvbA=" role="tab">
+Schema</button>
+</li>
+</ul>
+<div aria-hidden="false" aria-labelledby="17SYCeI=" data-name="examplePanel" id="QAtMnf4=" role="tabpanel" tabindex="0">
+<div>
+<div class="highlight-code">
+<pre class="example microlight" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: white;">
+<code class="language-json" style="white-space: pre;">
+<span>
+<!-- react-text: 1991 -->
+{
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 1993 -->
+  <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 1995 -->
+"detail"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 1997 -->
+: [
+<!-- /react-text -->
+</span>
+<!-- react-text: 1998 -->
+    {
+<!-- /react-text -->
+<span>
+<!-- react-text: 2000 -->
+      <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 2002 -->
+"loc"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2004 -->
+: [
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2006 -->
+        <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2008 -->
+"string"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2010 -->
+
+<!-- /react-text -->
+</span>
+<!-- react-text: 2011 -->
+      ],
+<!-- /react-text -->
+<span>
+<!-- react-text: 2013 -->
+      <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 2015 -->
+"msg"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2017 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2019 -->
+"string"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2021 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2023 -->
+      <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 2025 -->
+"type"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2027 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2029 -->
+"string"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2031 -->
+
+<!-- /react-text -->
+</span>
+<!-- react-text: 2032 -->
+    }
+<!-- /react-text -->
+<!-- react-text: 2033 -->
+  ]
+<!-- /react-text -->
+<!-- react-text: 2034 -->
+}
+<!-- /react-text -->
+</code>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</td>
+<td class="response-col_links">
+<i>
+No links</i>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- react-text: 1832 -->
+ <!-- /react-text -->
+</div>
+</div>
+</span>
+<span>
+<div class="opblock opblock-get is-open" id="operations-default-get_user_use__id__get">
+<div class="opblock-summary opblock-summary-get">
+<button aria-label="get ​/use​/{id}" aria-expanded="true" class="opblock-summary-control">
+<span class="opblock-summary-method">
+GET</span>
+<span class="opblock-summary-path" data-path="/use/{id}">
+<a class="nostyle" href="#/default/get_user_use__id__get">
+<span>
+<!-- react-text: 178 -->
+/use<!-- /react-text -->
+<wbr>
+<!-- react-text: 180 -->
+/{id}<!-- /react-text -->
+</span>
+</a>
+</span>
+<div class="opblock-summary-description">
+Get User</div>
+<svg class="arrow" width="20" height="20" aria-hidden="true" focusable="false">
+<use href="#large-arrow-up" xlink:href="#large-arrow-up">
+</use>
+</svg>
+</button>
+<!-- react-empty: 184 -->
+</div>
+<div class="no-margin">
+<!-- react-text: 2353 -->
+ <!-- /react-text -->
+<div class="opblock-body">
+<div class="opblock-section">
+<div class="opblock-section-header">
+<div class="tab-header">
+<div class="tab-item active">
+<h4 class="opblock-title">
+<span>
+Parameters</span>
+</h4>
+</div>
+</div>
+<div class="try-out">
+<button class="btn try-out__btn cancel">
+Cancel</button>
+</div>
+</div>
+<div class="parameters-container">
+<div class="table-container">
+<table class="parameters">
+<thead>
+<tr>
+<th class="col_header parameters-col_name">
+Name</th>
+<th class="col_header parameters-col_description">
+Description</th>
+</tr>
+</thead>
+<tbody>
+<tr data-param-name="id" data-param-in="path">
+<td class="parameters-col_name">
+<div class="parameter__name required">
+<!-- react-text: 2374 -->
+id<!-- /react-text -->
+<span>
+&nbsp;*</span>
+</div>
+<div class="parameter__type">
+<!-- react-text: 2377 -->
+integer<!-- /react-text -->
+</div>
+<div class="parameter__deprecated">
+</div>
+<div class="parameter__in">
+<!-- react-text: 2380 -->
+(<!-- /react-text -->
+<!-- react-text: 2381 -->
+path<!-- /react-text -->
+<!-- react-text: 2382 -->
+)<!-- /react-text -->
+</div>
+</td>
+<td class="parameters-col_description">
+<input type="text" class="" title="" placeholder="id" value="2">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- react-empty: 2528 -->
+<div class="btn-group">
+<button class="btn execute opblock-control__btn">
+Execute</button>
+<button class="btn btn-clear opblock-control__btn">
+Clear</button>
+</div>
+<div class="responses-wrapper">
+<div class="opblock-section-header">
+<h4>
+Responses</h4>
+</div>
+<div class="responses-inner">
+<div>
+<div>
+<div class="curl-command">
+<h4>
+Curl</h4>
+<div class="copy-to-clipboard">
+<button>
+</button>
+</div>
+<div>
+<pre class="curl microlight" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: white;">
+<code class="language-bash" style="white-space: pre;">
+<span>
+<!-- react-text: 2543 -->
+curl -X <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2545 -->
+'GET'<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2547 -->
+ \
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2549 -->
+  <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2551 -->
+'http://localhost:8000/use/2'<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2553 -->
+ \
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2555 -->
+  -H <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2557 -->
+'accept: application/json'<!-- /react-text -->
+</span>
+</code>
+</pre>
+</div>
+</div>
+<div>
+<h4>
+Request URL</h4>
+<div class="request-url">
+<pre class="microlight">
+http://localhost:8000/use/2</pre>
+</div>
+</div>
+<h4>
+Server response</h4>
+<table class="responses-table live-responses-table">
+<thead>
+<tr class="responses-header">
+<td class="col_header response-col_status">
+Code</td>
+<td class="col_header response-col_description">
+Details</td>
+</tr>
+</thead>
+<tbody>
+<tr class="response">
+<td class="response-col_status">
+<!-- react-text: 2571 -->
+200<!-- /react-text -->
+</td>
+<td class="response-col_description">
+<div>
+<h5>
+Response body</h5>
+<div class="highlight-code">
+<div class="download-contents">
+Download</div>
+<div class="copy-to-clipboard">
+<button>
+</button>
+</div>
+<pre class=" microlight" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: white;">
+<code class="language-json" style="white-space: pre;">
+<span>
+<!-- react-text: 2582 -->
+{
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2584 -->
+  <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 2586 -->
+"name"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2588 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2590 -->
+"JOJO_N"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2592 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2594 -->
+  <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 2596 -->
+"email"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2598 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2600 -->
+"JOJO_E"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2602 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2604 -->
+  <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 2606 -->
+"id"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2608 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(211, 99, 99);">
+<!-- react-text: 2610 -->
+2<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2612 -->
+
+<!-- /react-text -->
+</span>
+<!-- react-text: 2613 -->
+}
+<!-- /react-text -->
+</code>
+</pre>
+</div>
+</div>
+<div>
+<h5>
+Response headers</h5>
+<pre class="microlight">
+<span class="headerline">
+<!-- react-text: 2618 -->
+ <!-- /react-text -->
+<!-- react-text: 2619 -->
+content-length<!-- /react-text -->
+<!-- react-text: 2620 -->
+: <!-- /react-text -->
+<!-- react-text: 2621 -->
+41<!-- /react-text -->
+<!-- react-text: 2622 -->
+ <!-- /react-text -->
+</span>
+<span class="headerline">
+<!-- react-text: 2624 -->
+ <!-- /react-text -->
+<!-- react-text: 2625 -->
+content-type<!-- /react-text -->
+<!-- react-text: 2626 -->
+: <!-- /react-text -->
+<!-- react-text: 2627 -->
+application/json<!-- /react-text -->
+<!-- react-text: 2628 -->
+ <!-- /react-text -->
+</span>
+<span class="headerline">
+<!-- react-text: 2630 -->
+ <!-- /react-text -->
+<!-- react-text: 2631 -->
+date<!-- /react-text -->
+<!-- react-text: 2632 -->
+: <!-- /react-text -->
+<!-- react-text: 2633 -->
+Sat,11 Dec 2021 11:31:57 GMT<!-- /react-text -->
+<!-- react-text: 2634 -->
+ <!-- /react-text -->
+</span>
+<span class="headerline">
+<!-- react-text: 2636 -->
+ <!-- /react-text -->
+<!-- react-text: 2637 -->
+server<!-- /react-text -->
+<!-- react-text: 2638 -->
+: <!-- /react-text -->
+<!-- react-text: 2639 -->
+uvicorn<!-- /react-text -->
+<!-- react-text: 2640 -->
+ <!-- /react-text -->
+</span>
+</pre>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4>
+Responses</h4>
+</div>
+<table aria-live="polite" class="responses-table" id="get_use__id__responses" role="region">
+<thead>
+<tr class="responses-header">
+<td class="col_header response-col_status">
+Code</td>
+<td class="col_header response-col_description">
+Description</td>
+<td class="col col_header response-col_links">
+Links</td>
+</tr>
+</thead>
+<tbody>
+<tr class="response response_current" data-code="200">
+<td class="response-col_status">
+200</td>
+<td class="response-col_description">
+<div class="response-col_description__inner">
+<div class="renderedMarkdown">
+<p>
+Successful Response</p>
+</div>
+</div>
+<section class="response-controls">
+<div class="response-control-media-type response-control-media-type--accept-controller">
+<small class="response-control-media-type__title">
+Media type</small>
+<div class="content-type-wrapper ">
+<select aria-label="Media Type" class="content-type">
+<option value="application/json">
+application/json</option>
+</select>
+</div>
+<small class="response-control-media-type__accept-message">
+<!-- react-text: 2409 -->
+Controls <!-- /react-text -->
+<code>
+Accept</code>
+<!-- react-text: 2411 -->
+ header.<!-- /react-text -->
+</small>
+</div>
+</section>
+<div class="model-example">
+<ul class="tab" role="tablist">
+<li class="tabitem active" role="presentation">
+<button aria-controls="Iz1fpg4=" aria-selected="true" class="tablinks" data-name="example" id="8KL2khg=" role="tab">
+Example Value</button>
+</li>
+<li class="tabitem" role="presentation">
+<button aria-controls="+N3HdiI=" aria-selected="false" class="tablinks" data-name="model" id="WYtR4bE=" role="tab">
+Schema</button>
+</li>
+</ul>
+<div aria-hidden="false" aria-labelledby="8KL2khg=" data-name="examplePanel" id="Iz1fpg4=" role="tabpanel" tabindex="0">
+<div>
+<div class="highlight-code">
+<pre class="example microlight" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: white;">
+<code class="language-json" style="white-space: pre;">
+<span>
+<!-- react-text: 2424 -->
+{
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2426 -->
+  <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 2428 -->
+"name"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2430 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2432 -->
+"string"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2434 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2436 -->
+  <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 2438 -->
+"email"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2440 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2442 -->
+"string"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2444 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2446 -->
+  <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 2448 -->
+"id"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2450 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(211, 99, 99);">
+<!-- react-text: 2452 -->
+0<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2454 -->
+
+<!-- /react-text -->
+</span>
+<!-- react-text: 2455 -->
+}
+<!-- /react-text -->
+</code>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</td>
+<td class="response-col_links">
+<i>
+No links</i>
+</td>
+</tr>
+<tr class="response " data-code="422">
+<td class="response-col_status">
+422</td>
+<td class="response-col_description">
+<div class="response-col_description__inner">
+<div class="renderedMarkdown">
+<p>
+Validation Error</p>
+</div>
+</div>
+<section class="response-controls">
+<div class="response-control-media-type">
+<small class="response-control-media-type__title">
+Media type</small>
+<div class="content-type-wrapper ">
+<select aria-label="Media Type" class="content-type">
+<option value="application/json">
+application/json</option>
+</select>
+</div>
+</div>
+</section>
+<div class="model-example">
+<ul class="tab" role="tablist">
+<li class="tabitem active" role="presentation">
+<button aria-controls="QMXYYus=" aria-selected="true" class="tablinks" data-name="example" id="Jpb5mlI=" role="tab">
+Example Value</button>
+</li>
+<li class="tabitem" role="presentation">
+<button aria-controls="sqmsOZM=" aria-selected="false" class="tablinks" data-name="model" id="QFrcszA=" role="tab">
+Schema</button>
+</li>
+</ul>
+<div aria-hidden="false" aria-labelledby="Jpb5mlI=" data-name="examplePanel" id="QMXYYus=" role="tabpanel" tabindex="0">
+<div>
+<div class="highlight-code">
+<pre class="example microlight" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: white;">
+<code class="language-json" style="white-space: pre;">
+<span>
+<!-- react-text: 2481 -->
+{
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2483 -->
+  <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 2485 -->
+"detail"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2487 -->
+: [
+<!-- /react-text -->
+</span>
+<!-- react-text: 2488 -->
+    {
+<!-- /react-text -->
+<span>
+<!-- react-text: 2490 -->
+      <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 2492 -->
+"loc"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2494 -->
+: [
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2496 -->
+        <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2498 -->
+"string"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2500 -->
+
+<!-- /react-text -->
+</span>
+<!-- react-text: 2501 -->
+      ],
+<!-- /react-text -->
+<span>
+<!-- react-text: 2503 -->
+      <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 2505 -->
+"msg"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2507 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2509 -->
+"string"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2511 -->
+,
+<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2513 -->
+      <!-- /react-text -->
+</span>
+<span class="hljs-attr">
+<!-- react-text: 2515 -->
+"type"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2517 -->
+: <!-- /react-text -->
+</span>
+<span style="color: rgb(162, 252, 162);">
+<!-- react-text: 2519 -->
+"string"<!-- /react-text -->
+</span>
+<span>
+<!-- react-text: 2521 -->
+
+<!-- /react-text -->
+</span>
+<!-- react-text: 2522 -->
+    }
+<!-- /react-text -->
+<!-- react-text: 2523 -->
+  ]
+<!-- /react-text -->
+<!-- react-text: 2524 -->
+}
+<!-- /react-text -->
+</code>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</td>
+<td class="response-col_links">
+<i>
+No links</i>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- react-text: 2527 -->
+ <!-- /react-text -->
+</div>
+</div>
+</span>
+</div>
+<!-- react-text: 186 -->
+ <!-- /react-text -->
+</div>
+</div>
+</span>
+</div>
+</section>
+</div>
+<div class="wrapper">
+<section class="block col-12 block-desktop col-12-desktop">
+<section class="models is-open">
+<h4>
+<button aria-expanded="true" class="models-control">
+<span>
+Schemas</span>
+<svg width="20" height="20" aria-hidden="true" focusable="false">
+<use xlink:href="#large-arrow-up">
+</use>
+</svg>
+</button>
+</h4>
+<div class="no-margin">
+<!-- react-text: 196 -->
+ <!-- /react-text -->
+<div id="model-Blog" class="model-container" data-name="Blog">
+<span class="models-jump-to-path">
+<!-- react-empty: 199 -->
+</span>
+<span class="model-box">
+<button aria-expanded="false" class="model-box-control">
+<span class="pointer">
+<span class="model-box">
+<span class="model model-title">
+Blog</span>
+</span>
+</span>
+<span class="model-toggle collapsed">
+</span>
+<span>
+ </span>
+</button>
+</span>
+</div>
+<div id="model-HTTPValidationError" class="model-container" data-name="HTTPValidationError">
+<span class="models-jump-to-path">
+<!-- react-empty: 209 -->
+</span>
+<span class="model-box">
+<button aria-expanded="false" class="model-box-control">
+<span class="pointer">
+<span class="model-box">
+<span class="model model-title">
+HTTPValidationError</span>
+</span>
+</span>
+<span class="model-toggle collapsed">
+</span>
+<span>
+ </span>
+</button>
+</span>
+</div>
+<div id="model-ShowBlog" class="model-container" data-name="ShowBlog">
+<span class="models-jump-to-path">
+<!-- react-empty: 219 -->
+</span>
+<span class="model-box">
+<button aria-expanded="false" class="model-box-control">
+<span class="pointer">
+<span class="model-box">
+<span class="model model-title">
+ShowBlog</span>
+</span>
+</span>
+<span class="model-toggle collapsed">
+</span>
+<span>
+ </span>
+</button>
+</span>
+</div>
+<div id="model-ShowUser" class="model-container" data-name="ShowUser">
+<span class="models-jump-to-path">
+<!-- react-empty: 229 -->
+</span>
+<span class="model-box">
+<button aria-expanded="false" class="model-box-control">
+<span class="pointer">
+<span class="model-box">
+<span class="model model-title">
+ShowUser</span>
+</span>
+</span>
+<span class="model-toggle collapsed">
+</span>
+<span>
+ </span>
+</button>
+</span>
+</div>
+<div id="model-User" class="model-container" data-name="User">
+<span class="models-jump-to-path">
+<!-- react-empty: 239 -->
+</span>
+<span class="model-box">
+<button aria-expanded="false" class="model-box-control">
+<span class="pointer">
+<span class="model-box">
+<span class="model model-title">
+User</span>
+</span>
+</span>
+<span class="model-toggle collapsed">
+</span>
+<span>
+ </span>
+</button>
+</span>
+</div>
+<div id="model-ValidationError" class="model-container" data-name="ValidationError">
+<span class="models-jump-to-path">
+<!-- react-empty: 249 -->
+</span>
+<span class="model-box">
+<button aria-expanded="false" class="model-box-control">
+<span class="pointer">
+<span class="model-box">
+<span class="model model-title">
+ValidationError</span>
+</span>
+</span>
+<span class="model-toggle collapsed">
+</span>
+<span>
+ </span>
+</button>
+</span>
+</div>
+<!-- react-text: 257 -->
+ <!-- /react-text -->
+</div>
+</section>
+</section>
+</div>
+</div>
+</div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@3/swagger-ui-bundle.js">
+</script>
+
+    <!-- `SwaggerUIBundle` is now available on the page -->
+
+    <script>
+
+    const ui = SwaggerUIBundle({
+        url: './openapi.json',
+    oauth2RedirectUrl: window.location.origin + '/docs/oauth2-redirect',
+        dom_id: '#swagger-ui',
+        presets: [
+        SwaggerUIBundle.presets.apis,
+        SwaggerUIBundle.SwaggerUIStandalonePreset
+        ],
+        layout: "BaseLayout",
+        deepLinking: true,
+        showExtensions: true,
+        showCommonExtensions: true
+    })
+    </script>
+
+    
+    
+    </body>
+
+</html>
